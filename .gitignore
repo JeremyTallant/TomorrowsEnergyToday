@@ -1,5 +1,6 @@
-config.py
-deep_solar_tract.csv
-.ipynb_checkpoints/
-__pycache__/
+deepsolar_tract.csv
+.ipynb_checkpoints
 .gitignore
+config.py
+__pycache__
+
