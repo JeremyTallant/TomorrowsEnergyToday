@@ -120,4 +120,4 @@ For the next part of the analysis we will be using allyson's part.ipynb where we
 ## Results 
 We found that the southernmost states have a higher count of residential solar systems in place at 905,267. The northernmost states only came out with 82,213 systems. 
 
-In the next part of the analysis Project_One_LH.ipynb was used 
+In the next part of the analysis we will be using Project_One_LH.ipynb
