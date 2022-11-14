@@ -28,13 +28,12 @@ In this project we used two main datasets:
 * Deep Solar (last updated 2016)
 * Cenus API (last updated 2020)
 
-The Deep Solar data is a csv we found on Kaggle with 72,538 rows organized by zip codes of different areas in the states and 143 columns of different metrics related to solar and other useful information like education. Due to the size of the csv we extracted the columns we wanted to analyze and merged all the data for the same state together to form a new dataframe of all the states in the United States. Three states/territories were dropped in they process due to lack of information which was Hawaii, Alaska, and Puerto Rico.
-Then we extracted data from the Census API and merged it with the Deep Solar data to create a new dataframe to use for our analysis.
+The Deep Solar data is a csv we found on Kaggle with 72,538 rows organized by zip codes of different areas in the states and 143 columns of different metrics related to solar and other useful information like education. Due to the size of the csv we extracted the columns we wanted to analyze and merged all the data for the same state together to form a new dataframe of all the states in the United States. Then we extracted data from the Census API and merged it with the Deep Solar data to create a new dataframe to use for our analysis. Three states/territories were dropped in they process due to lack of information which was Hawaii, Alaska, and Puerto Rico.
 
 *** Note: The Deep Solar dataset is a csv file that is larger than the 100 MB limit that is set for Github. So here is a link to my google drive to download the csv to your desktop so the mainscript.ipynb will run correctly when cycling through. Once downloaded you may need to adjust the path in the mainscript when reading the csv to your precise location. Link: "https://drive.google.com/file/d/1LzgMzcCLY813-dPi2gsYcrA2fw_52L63/view?usp=share_link" 
 
 ## Data Retrieval and Cleansing
-The first step in the project was to gather data from both sources, clean it, and merge it together.
+The first step in the project was to gather data from both sources, clean it, and merge it together in the mainscript.ipynb.
 
 We started with the Census API where we created a dataframe of all the states and different economic and socioeconomic factors.
 
@@ -63,7 +62,7 @@ After this we merged both dataframes together on the "State" column to create a 
 <img width="1192" alt="Screenshot 2022-11-14 at 2 26 46 PM" src="https://user-images.githubusercontent.com/112406455/201759112-2f6df8b4-7a20-4336-bb89-82c3889997e7.png">
 
 ## Analysis
-Using the number or residential solar systems as a base comparison we ran statiscal analyis on all the different columns in our dataframe along with some other columns that were added later which you can find in the combined.csv file in the main repository and here are our findings.
+The first part of the analysis is using edscript.ipynb. We used the number or residential solar systems as a base comparison where we ran statistical analyis on all the different columns in our dataframe along with some other columns that were added later which you can find in the combined.csv file in the main repository. Here are our findings.
 
 
 <img width="1169" alt="Screenshot 2022-11-14 at 2 44 10 PM" src="https://user-images.githubusercontent.com/112406455/201762738-a37d8a0c-ff41-4972-803d-055acb4ee191.png">
@@ -94,3 +93,31 @@ Using the number or residential solar systems as a base comparison we ran statis
 
 <img width="1106" alt="Screenshot 2022-11-14 at 2 45 48 PM" src="https://user-images.githubusercontent.com/112406455/201764940-fc70a06a-d957-414e-8ad4-f5c34f677c4e.png">
 
+<img width="1197" alt="Screenshot 2022-11-14 at 3 08 05 PM" src="https://user-images.githubusercontent.com/112406455/201765900-48f931bf-d708-465d-ae87-18993d0159bc.png">
+
+<img width="1213" alt="Screenshot 2022-11-14 at 3 08 13 PM" src="https://user-images.githubusercontent.com/112406455/201766006-c1d03752-5e08-4d51-a942-4cfadd2d901e.png">
+
+## Results 
+After thorough testing, we found only one variable that held any significant correlation, with a R-value of 0.9989 but that variable was total solar panel area. Ultimately, predicting how many residential solar installations a given state will have probably depends on some complex combination of variables of different weights, but at this point and with the data readily available from the government and industry, we just haven’t been able to work out exactly what that equation is.
+
+After the analysis some heat maps were made displaying different metircs.
+Here is one displaying the projected solar growth by state:
+
+<img width="995" alt="Screenshot 2022-11-14 at 3 38 32 PM" src="https://user-images.githubusercontent.com/112406455/201771087-200e5e71-d58e-4a92-8620-18c4f3c8ca3d.png">
+
+This one is displaying daily solar radiation by state:
+
+<img width="994" alt="Screenshot 2022-11-14 at 3 40 31 PM" src="https://user-images.githubusercontent.com/112406455/201771503-62441af9-9b2f-455b-8ae4-f4c3e6b1cfa0.png">
+
+For the next part of the analysis we will be using allyson's part.ipynb where we looked at who is using solar energy more, the northernmost states or the southernmost states. In this analysis, the combined.csv was used to make two new dataframes one for the northern states and one for the southern states and then plotted in a bar chart to see who uses the most solar by state for each region. 
+
+<img width="1209" alt="Screenshot 2022-11-14 at 3 51 07 PM" src="https://user-images.githubusercontent.com/112406455/201775531-9192cc5c-883e-4b9f-9dcd-fbbc9f4a46fb.png">
+
+<img width="1128" alt="Screenshot 2022-11-14 at 3 52 03 PM" src="https://user-images.githubusercontent.com/112406455/201775824-6c1262a1-9ec2-4e33-940f-67b585c2fe6d.png">
+
+<img width="1110" alt="Screenshot 2022-11-14 at 3 52 13 PM" src="https://user-images.githubusercontent.com/112406455/201775939-af7afb1a-6a30-4f72-89a4-fc89bfd401da.png">
+
+## Results 
+We found that the southernmost states have a higher count of residential solar systems in place at 905,267. The northernmost states only came out with 82,213 systems. 
+
+In the next part of the analysis Project_One_LH.ipynb was used 
