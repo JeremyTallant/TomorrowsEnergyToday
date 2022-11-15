@@ -65,7 +65,7 @@ After this we merged both dataframes together on the "State" column to create a 
 ## Analysis
 
 ## Edscript.ipynb
-The first part of the analysis is using edscript.ipynb. We used the number or residential solar systems as a base comparison where we ran statistical analyis on all the different columns in our dataframe along with some other columns that were added later which you can find in the combined.csv file in the main repository. Here are our findings.
+The first part of the analysis is using edscript.ipynb. We used the number or residential solar systems as a base comparison where we ran statistical analysis on all the different columns in our dataframe along with some other columns that were added later which you can find in the combined.csv file in the main repository. Here are our findings.
 
 
 <img width="1169" alt="Screenshot 2022-11-14 at 2 44 10 PM" src="https://user-images.githubusercontent.com/112406455/201762738-a37d8a0c-ff41-4972-803d-055acb4ee191.png">
