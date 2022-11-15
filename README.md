@@ -130,11 +130,12 @@ In the next part of the analysis we will be using Project_One_LH.ipynb to look t
 Although availability may play a role, the data does not show a correlation.  Determining how a household makes their decision in this case is not confirmed to be home ownership, per capita income or the availability of solar.  So, once again a negative result is still a result.  Our data shows there are a multitude of factors that play key roles in solar across the US, a continent that is vast and varied in its population density, income, education, technology and land use.
 
 ## Ericscript.ipynb
-For the final analysis we looked for any trends in our data on a heat map made in Google Maps.
+For the final analysis we used ericscript.ipynb to look for any trends in our data on a heat map made in Google Maps.
 
-Here is one displaying the projected solar growth by state:
+Heat map showing electricity costs by state:
 
-<img width="995" alt="Screenshot 2022-11-14 at 3 38 32 PM" src="https://user-images.githubusercontent.com/112406455/201771087-200e5e71-d58e-4a92-8620-18c4f3c8ca3d.png">
+<img width="970" alt="Screenshot 2022-11-14 at 8 02 50 PM" src="https://user-images.githubusercontent.com/112406455/201808484-5b680f72-c484-4324-906c-be0300504a19.png">
+
 
 This one is displaying daily solar radiation by state:
 
