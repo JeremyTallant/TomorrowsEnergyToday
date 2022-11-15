@@ -160,5 +160,17 @@ Closer to home, Texas is expected to outpace CA in solar panel growth.  However,
 Coming into this we had some questions that we were unable to find answers to with the data we had available. 
 Such as data on the age of homes/efficiency of construction? Or the attainability of solar for the average homeowner? We also couldn’t find a reason why the states with the highest solar radiation didn’t also have the highest adoption? The effects of weather and the issues regarding power transmission that would allow remote solar to work because professional estimates say the US would only need .5 to 1 % of all land to generate 100% of the needs we have. We just need more data. 
 
+## Instructions on how to run the code properly:
+* Download the repository onto your computer
+* Then download the Deep Solar csv from the link that we provided in the Overview of Data section
+* Open the repository in Jupiter Notebook
+* Add your api keys to the apikeys.py file
+* Then select solar.ipynb 
+* Make sure to create the correct pathway when reading the Deep Solar csv in line 4 of the code
+* Select the "Kernel" tab and click "Restart Kernel and Clear all Outputs"
+* Then proceed to hit shift+enter to cycle through the script cell by cell
+* The code is accompanied by an outline to walk you through the process step by step
+* Once finished, you will notice an output_data file with all images of the plots that were generated in the code.
+
 ## References 
 © 2022 edX Boot Camps LLC
