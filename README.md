@@ -15,7 +15,8 @@ To run the python scripts in this project, first you will need to obtain two API
 2. Overview of Data
 3. Data Retrieval and Cleansing
 4. Analysis
-5. Where to Next
+5. Projections for the Future
+6. Where to Next
 
 ## Questions
 * Is there any relation to education and solar usage?
@@ -62,6 +63,8 @@ After this we merged both dataframes together on the "State" column to create a 
 <img width="1192" alt="Screenshot 2022-11-14 at 2 26 46 PM" src="https://user-images.githubusercontent.com/112406455/201759112-2f6df8b4-7a20-4336-bb89-82c3889997e7.png">
 
 ## Analysis
+
+## Edscript.ipynb
 The first part of the analysis is using edscript.ipynb. We used the number or residential solar systems as a base comparison where we ran statistical analyis on all the different columns in our dataframe along with some other columns that were added later which you can find in the combined.csv file in the main repository. Here are our findings.
 
 
@@ -97,18 +100,10 @@ The first part of the analysis is using edscript.ipynb. We used the number or re
 
 <img width="1213" alt="Screenshot 2022-11-14 at 3 08 13 PM" src="https://user-images.githubusercontent.com/112406455/201766006-c1d03752-5e08-4d51-a942-4cfadd2d901e.png">
 
-## Results 
+### Results 
 After thorough testing, we found only one variable that held any significant correlation, with a R-value of 0.9989 but that variable was total solar panel area. Ultimately, predicting how many residential solar installations a given state will have probably depends on some complex combination of variables of different weights, but at this point and with the data readily available from the government and industry, we just haven’t been able to work out exactly what that equation is.
 
-After the analysis some heat maps were made displaying different metircs.
-Here is one displaying the projected solar growth by state:
-
-<img width="995" alt="Screenshot 2022-11-14 at 3 38 32 PM" src="https://user-images.githubusercontent.com/112406455/201771087-200e5e71-d58e-4a92-8620-18c4f3c8ca3d.png">
-
-This one is displaying daily solar radiation by state:
-
-<img width="994" alt="Screenshot 2022-11-14 at 3 40 31 PM" src="https://user-images.githubusercontent.com/112406455/201771503-62441af9-9b2f-455b-8ae4-f4c3e6b1cfa0.png">
-
+## Allyson's part.ipynb
 For the next part of the analysis we will be using allyson's part.ipynb where we looked at who is using solar energy more, the northernmost states or the southernmost states. In this analysis, the combined.csv was used to make two new dataframes one for the northern states and one for the southern states and then plotted in a bar chart to see who uses the most solar by state for each region. 
 
 <img width="1209" alt="Screenshot 2022-11-14 at 3 51 07 PM" src="https://user-images.githubusercontent.com/112406455/201775531-9192cc5c-883e-4b9f-9dcd-fbbc9f4a46fb.png">
@@ -117,7 +112,52 @@ For the next part of the analysis we will be using allyson's part.ipynb where we
 
 <img width="1110" alt="Screenshot 2022-11-14 at 3 52 13 PM" src="https://user-images.githubusercontent.com/112406455/201775939-af7afb1a-6a30-4f72-89a4-fc89bfd401da.png">
 
-## Results 
+### Results 
 We found that the southernmost states have a higher count of residential solar systems in place at 905,267. The northernmost states only came out with 82,213 systems. 
 
-In the next part of the analysis we will be using Project_One_LH.ipynb
+## Project_One_LH.ipynb
+In the next part of the analysis we will be using Project_One_LH.ipynb to look to see if there is any correlation between residential electricity price and per capita income, home ownership and solar companies in the state. In this script we also analyzed to see if the availability to solar businesses was a major factor in solar usage.
+
+<img width="1246" alt="Screenshot 2022-11-14 at 6 13 00 PM" src="https://user-images.githubusercontent.com/112406455/201794660-b70da4da-4239-43b6-a419-714e1b685e75.png">
+
+<img width="1109" alt="Screenshot 2022-11-14 at 7 12 55 PM" src="https://user-images.githubusercontent.com/112406455/201802207-79380def-b1cc-4d5d-b84b-a40c7cc3e5a6.png">
+
+<img width="1109" alt="Screenshot 2022-11-14 at 7 18 32 PM" src="https://user-images.githubusercontent.com/112406455/201802924-5e3ba6e0-eddc-42fc-8417-d1529b2f3364.png">
+
+<img width="1109" alt="Screenshot 2022-11-14 at 7 18 38 PM" src="https://user-images.githubusercontent.com/112406455/201802946-fd904320-f2e2-48cf-94af-4148fe5e110a.png">
+
+### Results
+Although availability may play a role, the data does not show a correlation.  Determining how a household makes their decision in this case is not confirmed to be home ownership, per capita income or the availability of solar.  So, once again a negative result is still a result.  Our data shows there are a multitude of factors that play key roles in solar across the US, a continent that is vast and varied in its population density, income, education, technology and land use.
+
+## Ericscript.ipynb
+For the final analysis we looked for any trends in our data on a heat map made in Google Maps.
+
+Here is one displaying the projected solar growth by state:
+
+<img width="995" alt="Screenshot 2022-11-14 at 3 38 32 PM" src="https://user-images.githubusercontent.com/112406455/201771087-200e5e71-d58e-4a92-8620-18c4f3c8ca3d.png">
+
+This one is displaying daily solar radiation by state:
+
+<img width="994" alt="Screenshot 2022-11-14 at 3 40 31 PM" src="https://user-images.githubusercontent.com/112406455/201771503-62441af9-9b2f-455b-8ae4-f4c3e6b1cfa0.png">
+
+## Projections for the Future
+
+As of today:
+<img width="981" alt="Screenshot 2022-11-14 at 7 39 21 PM" src="https://user-images.githubusercontent.com/112406455/201805615-96eb561c-5583-4242-b2d7-bc6d7e08ab08.png">
+
+Projected in five years:
+<img width="980" alt="Screenshot 2022-11-14 at 7 39 27 PM" src="https://user-images.githubusercontent.com/112406455/201805717-724ae685-3186-4ff4-a6fb-b9d52f4deed6.png">
+
+As of today, solar installations generate 130.9 GW of energy in the country, and account for about 2.8% of the U.S.’s energy production.  However, by mapping out the energy generation, we can get a good visual of how individual states are doing.
+Now, the heat map is focused on the coordinates of the state capitals, so there is some overlapping artifact that make their individual effects look a bit out-sized, particularly in the smaller northern states, but it’s a good map to show us the overall trend.
+This map reveals that Texas is actually number two in the nation in energy produced by solar panels, behind only CA with 15 GW compared to their 37 GW.
+However, as we can see from this next map, over the next 5 years, the focus of solar panel growth is expected to be heavily in Texas, followed by the north and midwest.  Nationally, this will represent a 249.4% projected increase in solar power generation.
+Closer to home, Texas is expected to outpace CA in solar panel growth.  However, CA is growing its solar generation at approximately 5 GW per year, while Texas is outpacing it at 8 GW.  At those rates of growth, Texas will surpass CA in solar power generation before the end of 2029.
+(Data from: https://www.seia.org/states-map and https://www.eia.gov/energyexplained/electricity/electricity-in-the-us-generation-capacity-and-sales.php)
+
+## Where to Next
+Coming into this we had some questions that we were unable to find answers to with the data we had available. 
+Such as data on the age of homes/efficiency of construction? Or the attainability of solar for the average homeowner? We also couldn’t find a reason why the states with the highest solar radiation didn’t also have the highest adoption? The effects of weather and the issues regarding power transmission that would allow remote solar to work because professional estimates say the US would only need .5 to 1 % of all land to generate 100% of the needs we have. We just need more data. 
+
+## References 
+© 2022 edX Boot Camps LLC
